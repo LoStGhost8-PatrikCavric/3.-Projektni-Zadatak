@@ -4,6 +4,23 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public Rigidbody2D rb;
+    int dir = 1;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    public void ChangeDirection()
+    {
+        dir *= -1;
+    }
+
+    public void ChangeColor(Color color)
+    {
+        GetComponent<SpriteRenderer>().color = color;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +30,18 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        rb.velocity = new Vector2(0, 12 * dir);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (dir == 1)
+        {
+            if (collision.gameObject.tag == "Player")
+            {
+                collision.gameObject.GetComponent<Spaceship>().TakeDamage();
+                Destroy(gameObject);
+            }
+        }
     }
 }
