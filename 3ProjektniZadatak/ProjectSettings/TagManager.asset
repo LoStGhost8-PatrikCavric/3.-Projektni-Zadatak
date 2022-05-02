@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Objects
+  - Breakable Objects
+  - Player
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Floor
     uniqueID: 710416741
+    locked: 0
+  - name: BreakableObjects
+    uniqueID: 2001865239
     locked: 0
   - name: Player
     uniqueID: 145643859
