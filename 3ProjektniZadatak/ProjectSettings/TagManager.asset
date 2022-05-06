@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Ground
+  - Objects
+  - Breakable Objects
+  - Player
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 710416741
+    locked: 0
+  - name: BreakableObjects
+    uniqueID: 2001865239
+    locked: 0
+  - name: Player
+    uniqueID: 145643859
     locked: 0
