@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,11 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
- Roko
-  controlID: 97
-
-  controlID: 19
- main
+  controlID: 77
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,11 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
- Roko
-  controlID: 81
-
-  controlID: 20
- main
+  controlID: 83
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -256,11 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
- Roko
-  controlID: 82
-
-  controlID: 21
- main
+  controlID: 84
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,28 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Objects
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Objects
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: "D:\\Patrik Cavri\u0107 (2.E)\\3ProjektniZadatak"
+  m_LastProjectPath: C:\Users\pc\Documents\GitHub\3.-Projektni-Zadatak\3ProjektniZadatak
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
- Roko
-    m_SelectedIDs: f85f0000
-    m_LastClickedID: 24568
-    m_ExpandedIDs: 00000000e65f000000ca9a3b
-
-    m_SelectedIDs: a2920000
-    m_LastClickedID: 37538
-    m_ExpandedIDs: 00000000409200004e920000
- main
+    m_SelectedIDs: 08600000
+    m_LastClickedID: 24584
+    m_ExpandedIDs: 00000000ea5f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -378,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e65f0000
+    m_ExpandedIDs: 00000000ea5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -508,11 +490,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
- Roko
-      m_ExpandedIDs: 2cfbffff
-
-      m_ExpandedIDs: a8b0ffff4cc5ffff
- main
+      m_ExpandedIDs: 2afaffff2cfbffff2e600000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -528,7 +506,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 4}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -783,13 +761,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.4213505, y: 0.17209806, z: 0.022622287}
+    m_Target: {x: 436.33572, y: 300.28235, z: -7.012398}
     speed: 2
- Roko
-    m_Value: {x: 2.7926862, y: 2.4917347, z: 0.05851096}
-
-    m_Value: {x: 4.4213505, y: 0.17209806, z: 0.022622287}
- main
+    m_Value: {x: 436.33572, y: 300.28235, z: -7.012398}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -840,9 +814,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.683914
+    m_Target: 719.77435
     speed: 2
-    m_Value: 12.683914
+    m_Value: 719.77435
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -928,7 +902,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
