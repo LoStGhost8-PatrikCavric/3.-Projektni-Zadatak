@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public bool canShoot;
     public float fireRate;
     public int health;
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,8 @@ public class Enemy : MonoBehaviour
         }
         fireRate = fireRate + (Random.Range(fireRate / -2, fireRate / 2));
         InvokeRepeating("Shoot", fireRate, fireRate);
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
