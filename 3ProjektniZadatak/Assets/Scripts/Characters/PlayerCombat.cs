@@ -11,6 +11,8 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask breakableObjects;
     public float attackRate;
     public float nextAttackTime = 0f;
+    public int attackDamage;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -33,13 +35,31 @@ public class PlayerCombat : MonoBehaviour
     }
     public void Attack()
     {
-        anim.SetTrigger("Attack");
+        if (Input.GetKey(KeyCode.W))
+        {
+            anim.SetTrigger("AttackUp");
+        }
+
+        else if (Input.GetKey(KeyCode.S))
+        {
+            anim.SetTrigger("AttackDown");
+        }
+
+        else if (Input.GetKey(KeyCode.A))
+        {
+            anim.SetTrigger("AttackLeft");
+        }
+
+        else if (Input.GetKey(KeyCode.D))
+        {
+            anim.SetTrigger("AttackRight");
+        }
 
         Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, breakableObjects);
 
-        foreach (Collider2D breakable in hitObjects)
+        foreach (Collider2D objects in hitObjects)
         {
-            GetComponent<BreakableObjects>().TakeDamage();
+            objects.GetComponent<BreakableObjects>().TakeDamage(attackDamage);
         }
     }
 

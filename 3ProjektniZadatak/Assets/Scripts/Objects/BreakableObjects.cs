@@ -6,8 +6,7 @@ public class BreakableObjects : MonoBehaviour
 {
     public int maxHealth;
     int currentHealth;
-    public int minDmg;
-    public int maxDmg;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +19,9 @@ public class BreakableObjects : MonoBehaviour
         
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        currentHealth -= Random.Range(minDmg, maxDmg);
+        currentHealth -= damage;
 
         if (currentHealth == 0)
         {
