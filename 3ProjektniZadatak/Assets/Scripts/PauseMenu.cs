@@ -23,12 +23,14 @@ public class PauseMenu : MonoBehaviour
     public void Resume() //metoda za nastavak igre pritiskom gumba
     {
         GameManager.instance.PauseUI.SetActive(false); //pauza se isključuje
+        GameManager.instance.InventoryUI.SetActive(true);
         Time.timeScale = 1f; //vrijeme prolazi u realnom vremenu
         IsPaused = false; //bool postaje false
     }
     void PauseOn() //metoda koja uključuje pauzu
     {
         GameManager.instance.PauseUI.SetActive(true); //pauza se prikazuje na canvasu
+        GameManager.instance.InventoryUI.SetActive(false);
         Time.timeScale = 0f; //vrijeme se zaustavlja u igri
         IsPaused = true; //bool postaje true
     }
@@ -38,7 +40,9 @@ public class PauseMenu : MonoBehaviour
     }
     public void GoBack() //metoda za vraćanje u main menu
     {
-        SceneManager.LoadScene("MainMenu"); //prebacuje se scena na main menu
+        SceneManager.LoadScene("MainMenu");
+        GameManager.instance.PauseUI.SetActive(false);
+        IsPaused = false;//prebacuje se scena na main menu
     }
     public void QuitGame()
     {

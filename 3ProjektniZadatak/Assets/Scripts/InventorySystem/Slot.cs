@@ -17,12 +17,12 @@ public class Slot : MonoBehaviour
             inventory.isFull[i] = false;
         }
     }
-    public void DropItem()
+    /*public void DropItem()
     {
         foreach (Transform child in transform)
         {
             child.GetComponent<Spawn>().SpawnDroppedItem();
             GameObject.Destroy(child.gameObject);
         }
-    }
+    }*/
 }
