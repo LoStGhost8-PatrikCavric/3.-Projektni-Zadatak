@@ -7,8 +7,8 @@ public class Enemy : MonoBehaviour
     public GameObject bullet;
     public Color bulletColor;
 
-    public float xSpeed;
-    public float ySpeed;
+    //public float xSpeed;
+    //public float ySpeed;
 
     public bool canShoot;
     public float fireRate;

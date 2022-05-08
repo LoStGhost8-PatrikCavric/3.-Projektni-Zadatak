@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public Animator anim;
+    
 
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -17,7 +17,7 @@ public class PlayerCombat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -35,26 +35,7 @@ public class PlayerCombat : MonoBehaviour
     }
     public void Attack()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            anim.SetTrigger("AttackUp");
-        }
-
-        else if (Input.GetKey(KeyCode.S))
-        {
-            anim.SetTrigger("AttackDown");
-        }
-
-        else if (Input.GetKey(KeyCode.A))
-        {
-            anim.SetTrigger("AttackLeft");
-        }
-
-        else if (Input.GetKey(KeyCode.D))
-        {
-            anim.SetTrigger("AttackRight");
-        }
-
+        
         Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, breakableObjects);
 
         foreach (Collider2D objects in hitObjects)
