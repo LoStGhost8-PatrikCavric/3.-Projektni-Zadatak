@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public float speed = 0f;
     public Animator anim;
+    //public AudioSource sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,5 +61,53 @@ public class Player : MonoBehaviour
         {
             anim.SetInteger("AnimState", 0);
         }
+
+        /*if (Input.GetKeyUp(KeyCode.W))
+        {
+            if (!sound.isPlaying)
+            {
+                sound.Play();
+            }
+            else
+            {
+                sound.Stop();
+            }
+        }
+
+        else if (Input.GetKeyUp(KeyCode.S))
+        {
+            if (!sound.isPlaying)
+            {
+                sound.Play();
+            }
+            else
+            {
+                sound.Stop();
+            }
+        }
+
+        else if (Input.GetKeyUp(KeyCode.A))
+        {
+            if (!sound.isPlaying)
+            {
+                sound.Play();
+            }
+            else
+            {
+                sound.Stop();
+            }
+        }
+
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            if (!sound.isPlaying)
+            {
+                sound.Play();
+            }
+            else
+            {
+                sound.Stop();
+            }
+        }*/
     }
 }
