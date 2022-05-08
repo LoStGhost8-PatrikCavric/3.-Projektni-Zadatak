@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     public float speed = 0f;
     public Animator anim;
+    public string tekst;
     //public AudioSource sound;
     // Start is called before the first frame update
     void Start()
@@ -114,6 +115,6 @@ public class Player : MonoBehaviour
     public void AddCoins(int value)
     {
         GameManager.instance.coins = GameManager.instance.coins + value;
-        GameManager.instance.GameUI.transform.Find("tuPiseNovac").GetComponent<Text>().text = "COINS: " + GameManager.instance.coins;
+        GameManager.instance.GameUI.transform.Find(tekst).GetComponent<Text>().text = "COINS: " + GameManager.instance.coins;
     }
 }
