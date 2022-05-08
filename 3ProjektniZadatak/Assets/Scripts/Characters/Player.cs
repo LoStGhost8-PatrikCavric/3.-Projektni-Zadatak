@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     public float speed = 0f;
     public Animator anim;
-    public AudioSource sound;
+    //public AudioSource sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
             anim.SetInteger("AnimState", 0);
         }
 
-        if (Input.GetKeyUp(KeyCode.W))
+        /*if (Input.GetKeyUp(KeyCode.W))
         {
             if (!sound.isPlaying)
             {
@@ -109,7 +109,7 @@ public class Player : MonoBehaviour
             {
                 sound.Stop();
             }
-        }
+        }*/
     }
     public void AddCoins(int value)
     {
