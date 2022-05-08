@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78b0f49da552d5f44934bb99c58d6bfd
+guid: aa3e8477ff27ab641a010efcea09f7ef
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spaceship_0
+      name: zuto_0
       rect:
         serializedVersion: 2
-        x: 393
-        y: 518
-        width: 120
-        height: 120
+        x: 19
+        y: 382
+        width: 116
+        height: 103
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f39aa3f3deaa2f04f81b2988e6afa675
-      internalID: 2139027291
+      spriteID: 062c7c7e8c531b34b8c87a25d4f93f27
+      internalID: -2019133590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spaceship_1
+      name: zuto_2
       rect:
         serializedVersion: 2
-        x: 541
-        y: 366
-        width: 100
-        height: 160
+        x: 143
+        y: 382
+        width: 107
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93e815fc08f5c64478b2bbff53e97814
-      internalID: -1567314341
+      spriteID: 7e2031e6cc5fc4b42bbfff0fbe33bf1b
+      internalID: -1107091954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spaceship_2
+      name: zuto_3
       rect:
         serializedVersion: 2
-        x: 279
-        y: 345
-        width: 100
-        height: 160
+        x: 269
+        y: 381
+        width: 106
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3467db14cfc2d249b8b565e32481484
-      internalID: -1925507667
+      spriteID: b5f4dfa93c72cb44f8d981904214bfc8
+      internalID: -1428761373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spaceship_3
+      name: zuto_4
       rect:
         serializedVersion: 2
-        x: 400
-        y: 391
-        width: 100
-        height: 110
+        x: 378
+        y: 385
+        width: 84
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98448b8a94dd584cb340084ab532922
-      internalID: 786049194
+      spriteID: 87a702f903538d242ac780000c3234da
+      internalID: -1121117854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spaceship_4
+      name: zuto_7
       rect:
         serializedVersion: 2
-        x: 399
-        y: 332
-        width: 100
-        height: 50
+        x: 24
+        y: 252
+        width: 85
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,8 +202,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e886859103735d48a285ff137c139d5
-      internalID: 1733765089
+      spriteID: 81bddcecee2279148882327087afda6f
+      internalID: 77748262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zuto_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 239
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626318f0b0062544ebb7462967549da7
+      internalID: 2144703461
       vertices: []
       indices: 
       edges: []
@@ -219,11 +240,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spaceship_0: 2139027291
-      Spaceship_2: -1925507667
-      Spaceship_1: -1567314341
-      Spaceship_4: 1733765089
-      Spaceship_3: 786049194
+      zuto_7: 77748262
+      zuto_0: -2019133590
+      zuto_2: -1107091954
+      zuto_3: -1428761373
+      zuto_1: -308799166
+      zuto_5: 191635832
+      zuto_9: 2144703461
+      zuto_8: -490338919
+      zuto_6: -24217460
+      zuto_4: -1121117854
+      zuto_10: -485416021
+      zuto_11: 405209883
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
