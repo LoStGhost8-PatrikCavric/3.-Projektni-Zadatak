@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameObject GameUI;
-    //public GameObject PauseUI;
+    public GameObject PauseUI;
     public int coins = 0;
     public int health = 0;
     // Start is called before the first frame update
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Awake()
     {
         if (instance is null)
         {
