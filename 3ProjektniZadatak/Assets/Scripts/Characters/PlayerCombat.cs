@@ -35,26 +35,13 @@ public class PlayerCombat : MonoBehaviour
     }
     public void Attack()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            anim.SetTrigger("AttackUp");
-        }
+        anim.SetTrigger("AttackUp");
 
-        else if (Input.GetKey(KeyCode.S))
-        {
-            anim.SetTrigger("AttackDown");
-        }
+        anim.SetTrigger("AttackDown");
 
-        else if (Input.GetKey(KeyCode.A))
-        {
-            anim.SetTrigger("AttackLeft");
-        }
+        anim.SetTrigger("AttackLeft");
 
-        else if (Input.GetKey(KeyCode.D))
-        {
-            anim.SetTrigger("AttackRight");
-        }
-
+        anim.SetTrigger("AttackRight");
         Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, breakableObjects);
 
         foreach (Collider2D objects in hitObjects)
