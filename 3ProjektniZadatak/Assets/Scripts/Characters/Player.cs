@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -109,5 +110,10 @@ public class Player : MonoBehaviour
                 sound.Stop();
             }
         }*/
+    }
+    public void AddCoins(int value)
+    {
+        GameManager.instance.coins = GameManager.instance.coins + value;
+        GameManager.instance.GameUI.transform.Find("tuPišeNovac").GetComponent<Text>().text = "COINS: " + GameManager.instance.coins;
     }
 }
