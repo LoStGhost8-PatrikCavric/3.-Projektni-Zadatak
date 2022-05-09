@@ -6,10 +6,9 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
 
-    
+    public int health;
     public float speed = 0f;
     public Animator anim;
-    public string tekst;
     //public AudioSource sound;
     // Start is called before the first frame update
     void Start()
@@ -25,14 +24,7 @@ public class Player : MonoBehaviour
         {
             transform.Translate(0, speed * Time.deltaTime, 0);
             anim.SetInteger("AnimState", 1);
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.Translate(-speed * Time.deltaTime, 0, 0);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                transform.Translate(speed * Time.deltaTime, 0, 0);
-            }
+            
 
         }
 
@@ -40,14 +32,7 @@ public class Player : MonoBehaviour
         {
             transform.Translate(0, -speed * Time.deltaTime, 0);
             anim.SetInteger("AnimState", 2);
-            if (Input.GetKey(KeyCode.A))
-            {
-                transform.Translate(-speed * Time.deltaTime, 0, 0);
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                transform.Translate(speed * Time.deltaTime, 0, 0);
-            }
+            
         }
 
         else if (Input.GetKey(KeyCode.A))
@@ -119,11 +104,14 @@ public class Player : MonoBehaviour
             }
         }*/
     }
-    public void AddCoins(int value)
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        GameManager.instance.coins = GameManager.instance.coins + value;
-        GameManager.instance.GameUI.transform.Find(tekst).GetComponent<Text>().text = "COINS: " + GameManager.instance.coins;
+        if (collision.gameObject.tag == "Trap")
+        {
+            health--;
+        }
     }
 
-    
+
 }

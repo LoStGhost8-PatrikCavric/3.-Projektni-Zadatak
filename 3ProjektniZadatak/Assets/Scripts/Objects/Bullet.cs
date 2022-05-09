@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     int dir = 1;
 
     private void Awake()
