@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    int shootDelay = 0;
+    GameObject gunA, gunB;
+    public GameObject bullet;
     public float speed = 0f;
     public Animator anim;
     public string tekst;
@@ -12,7 +15,9 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();    
+        anim = GetComponent<Animator>();
+        gunA = transform.Find("gunA").gameObject;
+        gunB = transform.Find("gunB").gameObject;
     }
 
     // Update is called once per frame
@@ -58,6 +63,14 @@ public class Player : MonoBehaviour
             transform.Translate(speed * Time.deltaTime, 0, 0);
             anim.SetInteger("AnimState", 4);
         }
+
+
+        if (Input.GetKey(KeyCode.Space) && shootDelay > 10)
+        {
+            Shoot();
+            shootDelay++;
+        }
+        
 
         else
         {
@@ -116,5 +129,11 @@ public class Player : MonoBehaviour
     {
         GameManager.instance.coins = GameManager.instance.coins + value;
         GameManager.instance.GameUI.transform.Find(tekst).GetComponent<Text>().text = "COINS: " + GameManager.instance.coins;
+    }
+
+    public void Shoot()
+    {
+        Instantiate(bullet, gunA.transform.position, Quaternion.identity);
+        Instantiate(bullet, gunB.transform.position, Quaternion.identity);
     }
 }
