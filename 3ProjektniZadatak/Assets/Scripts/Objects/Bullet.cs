@@ -37,17 +37,17 @@ public class Bullet : MonoBehaviour
     {
         if (dir == 1)
         {
-            if (collision.gameObject.tag == "Player")
+            if (collision.gameObject.tag == "Enemy")
             {
-                collision.gameObject.GetComponent<Spaceship>().TakeDamage();
+                collision.gameObject.GetComponent<Enemy>().TakeDamage();
                 Destroy(gameObject);
             }
         }
         else
         {
-            if (collision.gameObject.tag =="Enemy")
+            if (collision.gameObject.tag =="Player")
             {
-                collision.gameObject.GetComponent<Enemy>().TakeDamage();
+                collision.gameObject.GetComponent<Spaceship>().TakeDamage();
                 Destroy(gameObject);
             }
         }
