@@ -8,10 +8,10 @@ public class PlayerCombat : MonoBehaviour
 
     public Transform attackPoint;
     public float attackRange = 0.5f;
-    public LayerMask breakableObjects;
+    public LayerMask player;
     public float attackRate;
     public float nextAttackTime = 0f;
-    public int attackDamage;
+    //public int attackDamage;
     
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if (Time.time >= nextAttackTime)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetKey(KeyCode.Space))
             {
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
@@ -36,11 +36,11 @@ public class PlayerCombat : MonoBehaviour
     public void Attack()
     {
         
-        Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, breakableObjects);
+        Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, player);
 
         foreach (Collider2D objects in hitObjects)
         {
-            objects.GetComponent<BreakableObjects>().TakeDamage(attackDamage);
+            objects.GetComponent<BreakableObjects>().TakeDamage(10);
         }
     }
 
