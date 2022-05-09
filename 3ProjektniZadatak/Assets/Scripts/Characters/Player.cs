@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+
+    
     public float speed = 0f;
     public Animator anim;
     public string tekst;
@@ -12,7 +14,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();    
+        anim = GetComponent<Animator>();
+       
     }
 
     // Update is called once per frame
@@ -58,6 +61,10 @@ public class Player : MonoBehaviour
             transform.Translate(speed * Time.deltaTime, 0, 0);
             anim.SetInteger("AnimState", 4);
         }
+
+
+        
+        
 
         else
         {
@@ -117,4 +124,6 @@ public class Player : MonoBehaviour
         GameManager.instance.coins = GameManager.instance.coins + value;
         GameManager.instance.GameUI.transform.Find(tekst).GetComponent<Text>().text = "COINS: " + GameManager.instance.coins;
     }
+
+    
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
     int dir = 1;
 
     private void Awake()
@@ -37,7 +37,15 @@ public class Bullet : MonoBehaviour
     {
         if (dir == 1)
         {
-            if (collision.gameObject.tag == "Player")
+            if (collision.gameObject.tag == "Enemy")
+            {
+                collision.gameObject.GetComponent<Enemy>().TakeDamage();
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            if (collision.gameObject.tag =="Player")
             {
                 collision.gameObject.GetComponent<Spaceship>().TakeDamage();
                 Destroy(gameObject);
