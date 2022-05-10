@@ -12,12 +12,12 @@ public class PlayerCombat : MonoBehaviour
     public float attackRate;
     public float nextAttackTime = 0f;
     //public int attackDamage;
-    
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,7 +35,29 @@ public class PlayerCombat : MonoBehaviour
     }
     public void Attack()
     {
+        if (Input.GetKey(KeyCode.W))
+        {
+            anim.SetTrigger("AttackUp");
+        }
         
+        else if (Input.GetKey(KeyCode.S))
+        {
+            anim.SetTrigger("AttackDown");
+        }
+
+        else if (Input.GetKey(KeyCode.A))
+        {
+            anim.SetTrigger("AttackLeft");
+        }
+
+        else if (Input.GetKey(KeyCode.D))
+        {
+            anim.SetTrigger("AttackRight");
+        }
+        
+
+        
+
         Collider2D[] hitObjects = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, player);
 
         foreach (Collider2D objects in hitObjects)
