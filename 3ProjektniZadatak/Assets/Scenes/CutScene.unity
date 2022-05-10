@@ -765,7 +765,7 @@ MonoBehaviour:
     sentences:
     - "Hi\t"
     - Hello
-    - see ya
+    - I have never seen someone
   isDialogueTrigger: 0
   isInDistance: 1
 --- !u!61 &992680826
