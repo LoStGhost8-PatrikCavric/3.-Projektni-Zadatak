@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level02.unity
     guid: b43e8eb413b9c37469e6f0928fc5d0e6
   - enabled: 1
+    path: Assets/Scenes/CutScene.unity
+    guid: 9e82fd6e9b94fec4fa40aa19cde810a6
+  - enabled: 1
     path: Assets/Scenes/Level03.unity
     guid: acad7422da12ec24fa2f9e6646aa5cd2
   - enabled: 1
@@ -26,9 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level06.unity
     guid: 5216a809741c5d241a6795aae72c27ed
-  - enabled: 1
-    path: Assets/Scenes/CutScene.unity
-    guid: 9e82fd6e9b94fec4fa40aa19cde810a6
   - enabled: 1
     path: Assets/Scenes/BossFightScene.unity
     guid: 94031c91304041b44bf8c70ed97c9120
