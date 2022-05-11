@@ -11,7 +11,7 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask player;
     public float attackRate;
     public float nextAttackTime = 0f;
-    //public int attackDamage;
+    public int attackDamage;
     public Animator anim;
 
     // Start is called before the first frame update
@@ -62,7 +62,7 @@ public class PlayerCombat : MonoBehaviour
 
         foreach (Collider2D objects in hitObjects)
         {
-            objects.GetComponent<BreakableObjects>().TakeDamage(10);
+            objects.GetComponent<BreakableObjects>().TakeDamage(attackDamage);
         }
     }
 
