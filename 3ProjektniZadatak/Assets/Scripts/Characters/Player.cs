@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public int maxHealth = 3;
-    public static Player instance;
+    //public int maxHealth = 3;
     public int health;
+    public int currHealth;
+    //public PlayerHealth playerHealth;
     public float speed = 0f;
     public Animator anim;
     //public AudioSource sound;
@@ -48,18 +49,13 @@ public class Player : MonoBehaviour
             transform.Translate(speed * Time.deltaTime, 0, 0);
             anim.SetInteger("AnimState", 4);
         }
-
-
-        
-        
-
         else
         {
             anim.SetInteger("AnimState", 0);
         }
 
 
-        if (health == 0)
+        if (currHealth <= 0)
         {
             Destroy(gameObject);
             SceneManager.LoadScene("MainMenu");
@@ -118,9 +114,18 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Trap")
         {
-            health--;
+            currHealth--;
         }
     }
+
+    /*public void TakeDamage(int value)
+    {
+        currHealth = currHealth - value;
+        if (currHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }*/
 
 
 }

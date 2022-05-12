@@ -6405,6 +6405,20 @@ MonoBehaviour:
   - {fileID: 462740867}
   - {fileID: 462740866}
   - {fileID: 462740865}
+--- !u!114 &556827613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556827611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138054fd6908e02478fe5246f5496a59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 5
 --- !u!1 &562071804
 GameObject:
   m_ObjectHideFlags: 0
@@ -6639,6 +6653,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 826454743}
     m_Modifications:
+    - target: {fileID: 3372534489242760764, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 556827613}
     - target: {fileID: 4183139711770158598, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

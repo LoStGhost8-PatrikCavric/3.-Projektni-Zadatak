@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BarStatusScripts : Spaceship
+public class EnemyBar : Enemy
 {
-    //public PlayerHealth playerHealth;
+    //public PlayerHealth enemyHealth;
     public Image fillImage;
     private Slider slider;
     // Start is called before the first frame update
