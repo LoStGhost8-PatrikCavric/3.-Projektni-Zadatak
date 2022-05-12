@@ -13549,8 +13549,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1664841241}
   - component: {fileID: 1664841240}
-  - component: {fileID: 1664841239}
   - component: {fileID: 1664841242}
+  - component: {fileID: 1664841243}
   m_Layer: 0
   m_Name: MicrosoftTeams-image_1_13
   m_TagString: Untagged
@@ -13558,19 +13558,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1664841239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664841238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d0d8ae1526af2549b5f8ca5e50e3baa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logotext: {fileID: 1952272614}
 --- !u!212 &1664841240
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13651,6 +13638,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3, y: 1.0857143, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1664841243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664841238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0d8ae1526af2549b5f8ca5e50e3baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logotext: {fileID: 1952272614}
 --- !u!1 &1706962193
 GameObject:
   m_ObjectHideFlags: 0
