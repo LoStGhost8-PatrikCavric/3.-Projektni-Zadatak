@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
+    public int maxHealth = 3;
+    public static Player instance;
     public int health;
     public float speed = 0f;
     public Animator anim;
@@ -54,6 +56,13 @@ public class Player : MonoBehaviour
         else
         {
             anim.SetInteger("AnimState", 0);
+        }
+
+
+        if (health == 0)
+        {
+            Destroy(gameObject);
+            SceneManager.LoadScene("MainMenu");
         }
 
         /*if (Input.GetKeyUp(KeyCode.W))
