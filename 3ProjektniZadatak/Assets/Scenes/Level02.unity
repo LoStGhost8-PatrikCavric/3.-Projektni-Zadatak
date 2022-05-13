@@ -10731,17 +10731,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!114 &1265462606 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4183139711770158599, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
-  m_PrefabInstance: {fileID: 2018316577}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1378081545
 GameObject:
   m_ObjectHideFlags: 0
@@ -10969,6 +10958,10 @@ PrefabInstance:
       propertyPath: health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5647777027331179916, guid: 5d1b0c62605fd76479c3d988a16efba9, type: 3}
+      propertyPath: currHealth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5647777027331179919, guid: 5d1b0c62605fd76479c3d988a16efba9, type: 3}
       propertyPath: m_Name
       value: Player
@@ -11016,8 +11009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 138054fd6908e02478fe5246f5496a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  currentHealth: 5
 --- !u!1 &1711828582
 GameObject:
   m_ObjectHideFlags: 0
@@ -11690,7 +11681,7 @@ PrefabInstance:
     - target: {fileID: 4183139711813112423, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
       propertyPath: fillImage
       value: 
-      objectReference: {fileID: 1265462606}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
 --- !u!1 &2044763666

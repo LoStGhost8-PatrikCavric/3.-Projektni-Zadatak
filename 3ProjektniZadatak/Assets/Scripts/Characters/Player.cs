@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     //public PlayerHealth playerHealth;
     public float speed = 0f;
     public Animator anim;
-    //public AudioSource sound;
+    public AudioSource sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
         }
 
-        /*if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.W))
         {
             if (!sound.isPlaying)
             {
@@ -107,7 +107,7 @@ public class Player : MonoBehaviour
             {
                 sound.Stop();
             }
-        }*/
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
