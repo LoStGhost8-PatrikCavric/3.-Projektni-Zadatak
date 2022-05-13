@@ -2104,15 +2104,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4183139711770158598, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4183139711770158598, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4183139711813112408, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
       propertyPath: m_Name
       value: healthbar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4183139711813112408, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4183139711813112409, guid: 25703a4c1ba584740a35d7cfec0bea05, type: 3}
       propertyPath: m_Pivot.x
