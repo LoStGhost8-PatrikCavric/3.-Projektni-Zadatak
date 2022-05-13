@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class Spaceship : MonoBehaviour
 {
     public float speed;
-    public int health;
-    int shootDelay;
+    //public PlayerHealth playerHealth;
+    public float health = 3;
+    public float currHealth = 3;
+    //int shootDelay;
     GameObject gunA, gunB;
     public GameObject bullet;
     
@@ -46,27 +48,27 @@ public class Spaceship : MonoBehaviour
             transform.Translate(speed * Time.deltaTime, 0, 0);
         }
 
-        if (Input.GetKey(KeyCode.Space) && shootDelay > 10)
+        /*if (Input.GetKey(KeyCode.Space) && shootDelay > 10)
         {
-            Shoot();
-            shootDelay++;
-        }
+            //Shoot();
+            //shootDelay++;
+        }*/
         
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float value)
     {
-        health--;
-        if (health == 0)
+        currHealth -= value;
+        if (currHealth <= 0)
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
-    public void Shoot()
+    /*public void Shoot()
     {
         Instantiate(bullet, gunA.transform.position, Quaternion.identity);
         Instantiate(bullet, gunB.transform.position, Quaternion.identity);
-    }
+    }*/
 }
